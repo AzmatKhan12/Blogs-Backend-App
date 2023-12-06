@@ -19,6 +19,10 @@ mongoose
 
 app.use("/", route);
 
+app.get("/",(req,res)=>{
+  res.send("welcome to my Blogs web page")
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Express app running on port " + (process.env.PORT || 3000));
 });
